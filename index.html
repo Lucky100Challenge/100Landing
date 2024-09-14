@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky100 - 100 Apps in 1 Year</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#4CAF50',
+                        'dark-green': '#2E7D32',
+                        'accent-green': '#66BB6A',
+                        'bg-gray': '#F5F7FA',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideIn: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 1s ease-out',
+                        slideIn: 'slideIn 0.5s ease-out',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-bg-gray text-gray-800 font-sans">
+    <header class="bg-white shadow-md fixed w-full z-10 transition-all duration-300 ease-in-out">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="100logo.png" alt="Lucky100 Logo" class="h-10 w-auto mr-3">
+                <span class="text-2xl font-bold text-dark-green">Lucky100</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="hover:text-accent-green transition duration-300">About</a></li>
+                <li><a href="#projects" class="hover:text-accent-green transition duration-300">Projects</a></li>
+                <li><a href="#community" class="hover:text-accent-green transition duration-300">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="hero" class="bg-gradient-to-r from-light-green to-dark-green text-white py-24">
+            <div class="container mx-auto px-6 text-center animate-fadeIn">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Build 100 Projects in 1 Year</h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Join me as I create two web apps every week using Next.js, pushing the boundaries of web development.</p>
+                <a href="https://x.com/thatsaasdude" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-dark-green hover:bg-accent-green hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">Follow the Journey</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold mb-10 text-center text-dark-green animate-slideIn">What is Lucky100?</h2>
+                <p class="text-xl mb-8 leading-relaxed">Lucky100 is an ambitious challenge to create 100 web apps in 12 months. Each project will explore different aspects of web development, from productivity tools to creative applications. The goal is to learn, grow, and inspire others to build.</p>
+                <ul class="list-none space-y-4 text-lg">
+                    <li class="flex items-center"><svg class="w-6 h-6 mr-2 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Two apps launched every week</li>
+                    <li class="flex items-center"><svg class="w-6 h-6 mr-2 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Built with Next.js and modern technologies</li>
+                    <li class="flex items-center"><svg class="w-6 h-6 mr-2 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Aimed at learning, community, and innovation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 bg-bg-gray">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-10 text-center text-dark-green animate-slideIn">Weekly Projects and Progress</h2>
+                <p class="text-xl mb-12 text-center max-w-3xl mx-auto">Track each project as it launches! Discover tools, apps, and creative solutions being built. Every project comes with its own story, challenges, and lessons learned.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <a href="https://pomodoro-tasks-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="proj1.png" alt="Pomodoro Tasks" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 1: Pomodoro Tasks</h3>
+                            <p class="text-gray-600">A productivity app combining Pomodoro technique with task management.</p>
+                        </div>
+                    </a>
+                    <a href="https://mealfinder.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="proj2.png" alt="Meal Finder" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 2: Meal Finder</h3>
+                            <p class="text-gray-600">A recipe search app using Next.js and a custom API.</p>
+                        </div>
+                    </a>
+                    <a href="https://personalwhiteboard-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="proj3.png" alt="Personal Doodleboard" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Personal Doodleboard</h3>
+                            <p class="text-gray-600">A personal doodleboard for drawing and note-taking.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="py-24 bg-gradient-to-r from-dark-green to-light-green text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-10 animate-slideIn">Get Involved!</h2>
+                <p class="text-xl mb-10 max-w-3xl mx-auto">Whether you're a developer, designer, or just curious, you're invited to follow along or even join in! Share ideas, collaborate on projects, or start your own version of the Lucky100 challenge.</p>
+                <a href="https://x.com/thatsaasdude" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-dark-green hover:bg-accent-green hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 hover:shadow-lg">Join the Conversation</a>
+            </div>
+        </section>
+
+        <section id="technologies" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold mb-10 text-center text-dark-green animate-slideIn">Building with the Best Tools</h2>
+                <p class="text-xl mb-12 text-center max-w-3xl mx-auto">Lucky100 is powered by Next.js for server-side rendering, along with cutting-edge libraries and frameworks like React, Framer Motion, and more.</p>
+                <div class="flex justify-center space-x-12">
+                    <img src="react-logo.png" alt="React Logo" class="w-20 h-20 object-contain float-animation">
+                    <img src="tailwind-logo.png" alt="Tailwind Logo" class="w-20 h-20 object-contain float-animation" style="animation-delay: 0.5s;">
+                    <img src="nextjs_logo.png" alt="Next.js Logo" class="w-20 h-20 object-contain float-animation" style="animation-delay: 1s;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-green text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Lucky100. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
