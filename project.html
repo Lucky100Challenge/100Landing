@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky100 - Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'light-green': '#4CAF50',
+                        'dark-green': '#2E7D32',
+                        'accent-green': '#66BB6A',
+                        'bg-gray': '#F5F7FA',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideIn: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 1s ease-out',
+                        slideIn: 'slideIn 0.5s ease-out',
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-bg-gray text-gray-800 font-sans">
+    <header class="bg-white shadow-md fixed w-full z-10 transition-all duration-300 ease-in-out">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="100logo.png" alt="Lucky100 Logo" class="h-10 w-auto mr-3">
+                <span class="text-2xl font-bold text-dark-green">Lucky100</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html#about" class="hover:text-accent-green transition duration-300">About</a></li>
+                <li><a href="index.html#community" class="hover:text-accent-green transition duration-300">Community</a></li>
+                <li><a href="project.html" class="hover:text-accent-green transition duration-300">All Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="py-24 bg-bg-gray">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl font-bold mb-10 text-center text-dark-green animate-slideIn">All Projects</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Project 1 -->
+                    <a href="https://pomodoro-tasks-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="proj1.png" alt="Pomodoro Tasks" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 1: Pomodoro Tasks</h3>
+                            <p class="text-gray-600">09/12/2024</p>
+                            <p class="mt-2">A task management app that uses the Pomodoro technique to boost productivity.</p>
+                        </div>
+                    </a>
+                    <!-- Project 2 -->
+                    <a href="https://mealfinder.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="proj2.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 2: Meal Finder</h3>
+                            <p class="text-gray-600">09/13/2024</p>
+                            <p class="mt-2">Discover and manage recipes with our easy-to-use Meal Finder application.</p>
+                        </div>
+                    </a>
+                    <!-- Project 3 -->
+                    <a href="https://personalwhiteboard-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="proj3.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 3: Personal Doodleboard</h3>
+                            <p class="text-gray-600">09/14/2024</p>
+                            <p class="mt-2">A collaborative doodling platform for brainstorming and creative sessions.</p>
+                        </div>
+                    </a>
+                    <!-- Project 4 -->
+                    <a href="https://markeditor-tau.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="mdeditor.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 4: Markdown Editor</h3>
+                            <p class="text-gray-600">09/14/2024</p>
+                            <p class="mt-2">Personal Markdown Editor for writing and editing markdown files.</p>
+                        </div>
+                    </a>
+                    <!-- Project 5 -->
+                    <a href="https://flashcardset.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="flashcard.png" class="w-full h-56 object-cover">   
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 5: Flashcard App</h3>
+                            <p class="text-gray-600">09/15/2024</p>
+                            <p class="mt-2">A flashcard app that helps you learn new things.</p>
+                        </div>
+                    </a>
+                    <!--Project 6 -->
+                    <a href="https://agentzero-taupe.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="Multi-Agent-Assistant (1).png" class="w-full h-56 object-cover">   
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 6: Chatbot</h3>
+                            <p class="text-gray-600">09/16/2024</p>
+                            <p class="mt-2">Multi-agent chatbot.</p>
+                        </div>
+                    </a>
+                    <!-- Project 7 -->
+                    <a href="https://ezbrowse.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="ezbrowse.png" class="w-full h-56 object-cover">   
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 7: EZBrowse</h3>
+                            <p class="text-gray-600">09/16/2024</p>
+                            <p class="mt-2">An AI browser inside of a browser.</p>
+                        </div>
+                    </a>
+                    <!-- Project 8 -->
+                    <a href="https://travelbuddyai.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="travelbuddy.png" class="w-full h-56 object-cover">   
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 8: Travel Buddy</h3>
+
+                            <p class="text-gray-600">09/17/2024</p>
+                            <p class="mt-2">A travel planning app that helps you plan your next trip.</p>
+                        </div>
+                    </a>
+                    <!-- Project 9 -->
+                    <a href="https://moviebuddy-ochre.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="moviedb.png" class="w-full h-56 object-cover">   
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 9: Movie Buddy</h3>
+                            <p class="text-gray-600">09/17/2024</p>
+                            <p class="mt-2">An movie finder app</p>
+                        </div>
+                    </a>
+                    <!-- Project 10 -->
+                    <a href="https://copygini.netlify.app/" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl">
+                        <img src="smc.png" class="w-full h-56 object-cover">   
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-accent-green">Project 10: Content Creation App</h3>
+                            <p class="text-gray-600">09/18/2024</p>
+                            <p class="mt-2">An AI content creation app</p>
+                        </div>
+                    </a>
+                    <!-- Project 11 -->
+                    
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </section>
+    </main>
+
+    <footer class="bg-dark-green text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Lucky100. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
